@@ -2,6 +2,10 @@
 
 A beautiful, interactive web application to ask someone out on a date! Built with React, Tailwind CSS, and Framer Motion for smooth animations.
 
+## 🌐 Live Demo
+
+**Check it out here:** [https://date-proposal-app-rho.vercel.app/](https://date-proposal-app-rho.vercel.app/)
+
 ## ✨ Features
 
 - 🎨 Beautiful blue gradient theme
@@ -32,20 +36,29 @@ A beautiful, interactive web application to ask someone out on a date! Built wit
 
 ## 📦 Installation
 
-1. Clone or download this repository
-2. Install dependencies:
+1. Clone or download this repository:
+```bash
+   git clone https://github.com/YOUR-USERNAME/date-proposal-app.git
+```
+2. Navigate to the project folder:
+```bash
+   cd date-proposal-app
+```
+3. Install dependencies:
 ```bash
    npm install
 ```
-3. Run the development server:
+4. Run the development server:
 ```bash
    npm run dev
 ```
-4. Open your browser to `http://localhost:5173`
+5. Open your browser to `http://localhost:5173`
 
 ## 🎯 Usage
 
 Simply open the app and share the URL with the person you want to ask out! The interactive experience will guide them through the proposal.
+
+**Live Demo:** [https://date-proposal-app-rho.vercel.app/](https://date-proposal-app-rho.vercel.app/)
 
 ## 📁 Project Structure
 ```
@@ -83,6 +96,16 @@ Want to personalize it? Here are some easy tweaks:
 - Customize the text to make it personal
 - Good luck! 🍀
 
+## 🚀 Deployment
+
+This project is deployed on [Vercel](https://vercel.com). To deploy your own version:
+
+1. Push your code to GitHub
+2. Sign up on [Vercel](https://vercel.com)
+3. Import your GitHub repository
+4. Click "Deploy"
+5. Share your custom URL! 🎉
+
 ## 📝 License
 
 Free to use! Made with 💙 for all the romantics out there.
@@ -94,3 +117,5 @@ Built with love and code. May your date be as smooth as these animations! ✨
 ---
 
 **Good luck with your date! 💙🚀**
+
+**Live Demo:** [https://date-proposal-app-rho.vercel.app/](https://date-proposal-app-rho.vercel.app/)
