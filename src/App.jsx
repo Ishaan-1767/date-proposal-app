@@ -31,9 +31,12 @@ export default function App() {
 
   // When countdown completes, show modal
   const handleCountdownComplete = () => {
-    setShowCountdown(false);
-    setShowModal(true);
-    setNoCount(8); // Advance count
+    // Only show modal if she hasn't said yes yet
+    if (!saidYes) {
+      setShowCountdown(false);
+      setShowModal(true);
+      setNoCount(8); // Advance count
+    }
   };
 
   // Modal dismiss counts as another "no"
@@ -45,6 +48,9 @@ export default function App() {
   // Handle "Yes" button click
   const handleYesClick = () => {
     setSaidYes(true);
+    // Immediately hide countdown and modal if they're showing
+    setShowCountdown(false);
+    setShowModal(false);
   };
 
   return (
@@ -145,15 +151,17 @@ export default function App() {
         </AnimatePresence>
       </div>
 
-      {/* Countdown Timer Overlay */}
-      <CountdownTimer
-        isActive={showCountdown}
-        onComplete={handleCountdownComplete}
-      />
+      {/* Countdown Timer Overlay - Only show if not said yes */}
+      {!saidYes && (
+        <CountdownTimer
+          isActive={showCountdown}
+          onComplete={handleCountdownComplete}
+        />
+      )}
 
-      {/* Final Plea Modal */}
+      {/* Final Plea Modal - Only show if not said yes */}
       <AnimatePresence>
-        {showModal && (
+        {showModal && !saidYes && (
           <FinalPleaModal
             isOpen={showModal}
             onYes={handleYesClick}
